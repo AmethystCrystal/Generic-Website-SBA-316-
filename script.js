@@ -11,3 +11,10 @@ flexItems.forEach(function(item){
     
 })
 
+const searchButton = document.querySelector(".btn-outline-success");
+
+
+function button(event) {
+  searchButton.textContent = "Searching!";
+}
+searchButton.addEventListener("click", button);
