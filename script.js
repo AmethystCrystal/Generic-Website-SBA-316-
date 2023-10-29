@@ -40,3 +40,19 @@ function search(event) {
 }
 searchInput.addEventListener("click", search);
 
+const email = document.querySelector("#userName");
+const message = document.querySelector("#validationMessage");
+
+email.addEventListener("input", function (){
+const minLength = 15;
+const value = email.value;
+
+if (value.length < minLength) {
+    validationMessage.textContent = `Email must be at least ${minLength} characters long.`;
+    email.setCustomValidity("Email must be at least 15 characters long.");
+} else {
+    validationMessage.textContent = "";
+    email.setCustomValidity("");
+}
+
+});
