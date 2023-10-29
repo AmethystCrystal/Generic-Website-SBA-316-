@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(218, 218, 214);
+    
 }
 
 
@@ -11,4 +11,13 @@
     background-color: white;
     height: 50%;
     width: 50%;
+}
+
+.flex-item {
+    padding: 30px;
+}
+
+#signup {
+    padding: 30px;
+    background-color: #f2f2f2;
 }
