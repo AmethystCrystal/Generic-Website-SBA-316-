@@ -16,7 +16,9 @@ const searchButton = document.querySelector(".btn-outline-success");
 
 function button(event) {
 searchButton.textContent = "Searching!";
+window.open("https://google.com");
 }searchButton.addEventListener("click", button);
+
 
 
 const question = document.querySelector("#faq")
@@ -25,7 +27,7 @@ const question = document.querySelector("#faq")
 
 function FAQ(event) {
     
-const confirmed = confirm("Are you ready to get all your questions answered?")
+const confirmed = window.confirm("Are you ready to get all your questions answered?")
 
 if (!confirmed) {
     event.preventDefault();
@@ -42,6 +44,7 @@ searchInput.addEventListener("click", search);
 
 const email = document.querySelector("#userName");
 const message = document.querySelector("#validationMessage");
+const submitButton = document.querySelector("#submit");
 
 email.addEventListener("input", function (){
 const minLength = 15;
@@ -49,10 +52,7 @@ const value = email.value;
 
 if (value.length < minLength) {
     validationMessage.textContent = `Email must be at least ${minLength} characters long.`;
-    email.setCustomValidity("Email must be at least 15 characters long.");
 } else {
     validationMessage.textContent = "";
-    email.setCustomValidity("");
 }
-
 });
