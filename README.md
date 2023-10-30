@@ -1,1 +1,1 @@
-  d
+My website is generic. There is no specific category for it because I spent most of my time on the minimum requirements. I created a sign up form. I added an image and some text. I also modified my code in many areas based on user interaction.
