@@ -18,11 +18,16 @@ function button(event) {
 searchButton.textContent = "Searching!";
 window.open("https://google.com");
 }searchButton.addEventListener("click", button);
+searchButton.addEventListener("mouseover", function (){
+    searchButton.style.backgroundColor = "red";
 
+searchButton.addEventListener("mouseout", function (){
+    searchButton.style.backgroundColor = "";
+})
+})
 
 
 const question = document.querySelector("#faq")
-
 
 
 function FAQ(event) {
